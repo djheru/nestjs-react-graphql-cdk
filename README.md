@@ -12,7 +12,11 @@ git add . && git commit -am "Initial Commit"
 mkdir -p recipe-site/infrastructure recipe-site/services recipe-site/websites
 ```
 
-### Set up VS Code workspace configuration
+### Set up VS Code Workspace Configuration
+
+```
+touch recipe-site.code-workspace
+```
 
 ### Website Setup
 
