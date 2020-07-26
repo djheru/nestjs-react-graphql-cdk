@@ -28,6 +28,24 @@ cd recipe-web && npm start
 
 ### API Setup
 
+```
+cd ../../services
+npm i -g @nestjs/cli
+nest new recipe-service # At the prompt, select npm
+cd recipe-service
+```
+
+- Nestjs applications and create-react-app applications both use port 3000 to listen for requests
+- If we attempt to run both the web development server (create-react-app) and the API server, we will get an error
+- Update `recipe-service/src/main.ts` to use port 4000
+  - Soon we will be reading this port from an environment variable, so this is just a temporary adjustment
+
+```
+npm start
+```
+
+- Using Postman, make a GET request to `http://localhost:4000`
+
 ## Initial Deployment
 
 ### Introduction to AWS CDK (Cloud Development Kit)
