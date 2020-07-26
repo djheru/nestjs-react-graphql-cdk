@@ -20,6 +20,12 @@ touch recipe-site.code-workspace
 
 ### Website Setup
 
+```
+cd ./recipe-site/websites
+npx create-react-app recipe-web --use-npm
+cd recipe-web && npm start
+```
+
 ### API Setup
 
 ## Initial Deployment
