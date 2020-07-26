@@ -2,7 +2,15 @@
 
 ## Initial Setup
 
-### Create Project Directory
+### Create Project Directories
+
+```
+mkdir nestjs-react-graphql-cdk && cdk $_
+touch README.md
+git init
+git add . && git commit -am "Initial Commit"
+mkdir -p recipe-site/infrastructure recipe-site/services recipe-site/websites
+```
 
 ### Set up VS Code workspace configuration
 
