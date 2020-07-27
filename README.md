@@ -50,6 +50,25 @@ npm start
 
 ### Introduction to AWS CDK (Cloud Development Kit)
 
+#### Create Sandbox
+
+```
+cd ../../.. # Out to the root project directory
+mkdir -p ./sandbox/hello-cdk && cd $_
+cdk init app --language=typescript
+```
+
+#### Understanding CDK Stacks
+
+- Check out `./bin/hello-cdk.ts`
+  - This is a CDK app. It's the root of our AWS configuration for this project
+- Apps contain one or more stacks
+- Check out `./lib/hello-cdk-stack.ts`
+- This is a self-contained unit of deployment. It represents (and is transpiled down to) a CloudFormation template
+- Stacks can be nested within stacks, but this can introduce additional complexity and limitations
+
+#### Adding Resources to a Stack with Constructs
+
 ### Website Infrastructure
 
 ### API Infrastructure
