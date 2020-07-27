@@ -69,6 +69,14 @@ cdk init app --language=typescript
 
 #### Adding Resources to a Stack with Constructs
 
+- Install an AWS-provided construct for S3
+  - `npm install -S @aws-cdk/aws-s3`
+- Deploy the stack
+  - `cdk deploy`
+- View the deployment process in the CloudFormation console
+- Remove the asset and delete the project
+  - `cdk destroy && cd ../..`
+
 ### Website Infrastructure
 
 ### API Infrastructure
